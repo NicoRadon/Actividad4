@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- aqui cambiamos de en (english/ingles) a es(español) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>actividad nicolas radon</title> <!-- aqui cambiamos el titulo por el nombre que nosotros elijamos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- dentro de body pondremos todo lo que queramos que se incluya en nuestra pagina web -->
+<body>
+    <!-- dentro del header se suele colocar lo primero que leeran nuestros usuarios (no lo primero que veran)vendria a ser el titulo,banner o portada superior de la pagina -->
+    <!-- en mi caso utilizare el nombre del nutricionista junto con el logo  -->
+    <header>
+        <img class="nombre" src="nombre.png" alt="nombre">
+<!-- dentro de la etiqueta img utilizamos src para especificar que imagen queremos utilizar -->
+
+        <img class="logo" src="logo.png" alt="logo">
+        <button class="buttonmo" id="modo-oscuro-btn">Modo Oscuro</button><!--  aqui creamos un boton para cambiar el modo oscuro al claro y viceversa, utilizamos id="modo-oscuro-btn" para luego llamarlo en nuestro javascript -->
+    </header>
+    <main>
+        <h1>Ponte en contacto</h1>
+            <form id="formulario" class="formulario" method="post">
+                <!-- para los formularios tenemos 2 metodos get y post. basicamente uno nos dara informacion de nuestro servidor GET y otro nos cargara informacion en nuestro servidor POST. en este caso ya que queremos que el cliente nos de su informacion (osea cargarla en nuestro servidor) utilizamos el metodo POST -->
+                <div class="inputContainer">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Ingrese su apellido" required>
+                </div>
+                <div class="inputContainer">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Ingrese su email" required>
+                </div>
+                    
+                <div class="inputContainer">
+                    <label for="telefono">Telefono</label>
+                    <input type="tel" id="tel" placeholder="Ingrese su telefono" required>
+                </div>   
+                <div class="block">
+                    <textarea name="comentario" id="comentario" rows="6" placeholder="Comentario" required></textarea>
+                </div>
+                <div  class="btnSubmit">
+                <input type="submit" value="Enviar" class="btnEnviar" id="btn-sweet">
+                </div>
+
+                
+            </form>
+    </main>
+    <!-- dentro del footer suelen estar los copyright, numeros telefonicos, ubicacion via google maps, enlaces a whatsapp, instagram y otras redes sociales de contacto sera el pie de pagina -->
+    <footer class="footer">
+        <a href="https://wa.me/qr/BAJO4Z356GEPF1" target="_blank">
+            <button><img class="wsp" src="wsp.png" alt=""></button>
+        </a>
+        <a href="https://t.me/buttershot" target="_blank">
+            <button><img class="tg" src="tg.png" alt=""></button>
+        </a>
+        <a href="https://instagram.com/nicolas_radon?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+            <button><img class="ig" src="ig.png" alt=""></button>
+        </a>
+        <!-- button es para generar un boton interactivo dentro de nuestra pagina web en este caso para que al presionar sean dirigidos a los enlaces de chat de whattsapp, telegram e instagram respectivamente -->
+    </footer>
+    <script src="script.js"></script> <!-- aqui enlazamos nuestro html con el archivo javascript -->
+</body>
+<!-- cuando utilizamos class= es una etiqueta que utilizamos para luego dentro del css referirnos a cada elemento que queremos modificar ya sea sus bordes,ubicacion etc -->
+
+</html>
+<!--  ya que esta es nuestra primer pagina web no utilizamos carpetas para separar el index.html del style.css ni las imagenes
+para realizarlo de forma mas prolija deberiamos tener una carpeta de imagenes, una carpeta donde pondremos todos nuestros archivos css y otra donde colocaremos los archivos javascript que veremos en las proximas clases -->

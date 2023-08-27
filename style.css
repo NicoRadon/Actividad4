@@ -1,0 +1,137 @@
+header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: right; 
+}
+/* background color se utiliza para el color de fondo de la etiqueta seleccionada
+padding se utiliza para dejar un espacio dentro del contenedor es decir el margen entre nuestro contenido y el borde de dicho contenedor
+display: flex utiliza flexbox para poder acomodar de manera eficiente el contenido dentro de nuestra pagina web
+justify content se usa para determinar la alineacion y la distribucion  de los elementos dentro del eje principal en este caso a la derecha */
+
+.nombre {
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    width: 500px;
+    display: flex;
+}
+/* position: absolute se utiliza para definir la ubicacion dentro de nuestra pagina web retirandolo del  flujo normal de la página y se coloca en una posición específica dentro del contenedor posicionado más cercano en este caso del margen superior e izquierdo de nuestra web */
+
+body {
+    background-color: #00c2cb;
+}  
+
+
+.wsp {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 25%;
+    top: 90%;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+    filter: drop-shadow(14px 15px 14px rgba(0, 0, 0, 0))
+    
+}
+/* width y height lo utilizamos para determinar el tamaño en este caso de la imagen del logo de whattsapp 
+cursor: pointer se utiliza para que aparezca la manito cuando scroleamos por encima del icono de whats app
+border radius le da ese aspecto redondeado a nuestro fondo en este caso el color negro detras del logo de whattsapp y filter drop shadow es para que sea difuminado*/
+
+.tg {width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+    filter: drop-shadow(14px 15px 14px rgba(0, 0, 0, 0))    
+
+}
+
+.ig {width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 75%;
+    top: 90%;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 10px;
+    filter: drop-shadow(14px 15px 14px rgba(0, 0, 0, 0))
+
+}
+h1{position: absolute;
+    left: 25%;
+    top: 30%;
+
+}
+form{ position: absolute;
+    left: 25%;
+    top: 40%;
+    width: 60%;
+    display: grid;
+    gap: 5vh;
+    grid-template-columns: 1fr 1fr;
+    }
+    /* display grid se utiliza para definir al elemento padre en cuadriculas y que asi los elementos hijos puedan ser ubicados dentro de ellas en filas y columnas
+    gap se utiliza para definir el espacio entre filas y columnas
+    grid template colums: 1fr 1fr se usa para  definir las columnas dentro de la cuadricula en este caso son 2 columnas de igual tamañano utilizando la unidad fracciones fr */
+    
+    form .block{
+    grid-column: 1 / 3;
+    gap: 3vh;
+    }
+    
+    form .inputContainer{
+    gap: 3vh;
+    }
+    
+    form .inputContainer input, select, option, textarea{
+    color: #000000;
+    padding: 10px;
+    background-color: #F5EDED;
+    border: none;   
+    border-bottom: 1px rgb(33, 33, 33) solid;
+    font-size: 15px;
+    font-weight: bold;
+    width: 100%;
+    }
+    
+    .btnEnviar{position: absolute;
+        top: 90%;
+    padding: 10px;
+    background-color: rgb(33, 33, 33);
+    color: white;
+    border: 1px solid #3E3636;
+    font-size: 18px;
+    font-weight: bold;
+    }
+    .btnEnviar:hover{
+    background-color: #173d5a;
+    color: rgb(33, 33, 33);
+    }
+
+    body {
+        /* Estilos para el modo claro */
+        background-color: #ffffff;
+        color: #333333;
+      }
+      
+      body.dark-mode {
+        /* Estilos para el modo oscuro */
+        background-color: #333333;
+        color: #00c2cb;
+      }
+      .buttonmo {
+        height: 50px;
+        width: 50px;
+        background-color:#00c2cb ;
+        font-size: small;
+        font-family: Arial;
+        position: absolute;
+        left: 5%;
+        top: 12.5%;
+      }
